@@ -9,25 +9,37 @@ body {
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 600px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: 900px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-header {}
+#siteTitle { 
+    font-size: 70px;
+    font-family: sans-serif; 
+    color:skyblue
+}
+
+#subTitle { font-size: 20px;
+font-family: monospace
+}
+
+header img {
+    float: left
+}
 header h1 {}
 header img {}
 header .subheading {}
 
-nav {}
+nav { color: black; background-color: skyblue ;
+}
 nav button {}
-nav ul {}
+nav ul a {color: black}
 nav ul li {display: inline}
 nav ul li a {}
 nav ul li.active a {}
 nav ul li a:hover {}
 
 main {}
-div.highlow { padding: 1px;
-    border: solid; border-width: medium}
+div.highlow {}
 
 main h3 { caption-side: bottom}
 main h2 {}

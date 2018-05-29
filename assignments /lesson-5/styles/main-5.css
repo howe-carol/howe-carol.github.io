@@ -31,14 +31,12 @@ header img {
 
 nav { color: black; background-color: skyblue; text-align: center ;
 }
-nav button {}
 nav ul a {display: inline-block;  color: black; padding: 2px 2px; }
 nav ul li {display: inline}
 nav ul li a {display: inline-block;  color: black; padding: 2px 2px;}
 nav ul li.active a {background-color: skyblue; color: black}
 nav ul li a:hover { color: antiquewhite; }
 
-main {}
 div.highlow {text-align: left}
 div.highlow span {font-weight: bold}
 div.conditions {text-align: left}
@@ -52,7 +50,7 @@ article h3 {text-align: center; }
 article { padding: 1px;
 border: solid; border-color: gainsboro; padding: 1px; padding: 25px}
 
-article img {position: static overflow:auto; float: right ; width: 200px; height: 100px; }
+article img {position: static; overflow:auto; float: right ; width: 200px; height: 100px; }
 
 section.h3 {color:aquamarine}
 footer {padding: 50px; text-align: center; overflow: visible; background-color: skyblue}

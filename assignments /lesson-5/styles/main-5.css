@@ -28,18 +28,15 @@ font-family: monospace; text-align: center
 header img {
     float: left; width: 200px; height: 150px;
 }
-header h1 {}
-header img {}
-header .subheading {}
 
 nav { color: black; background-color: skyblue; text-align: center ;
 }
 nav button {}
-nav ul a {color: black}
+nav ul a {display: inline-block;  color: black; padding: 2px 2px; }
 nav ul li {display: inline}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li a {display: inline-block;  color: black; padding: 2px 2px;}
+nav ul li.active a {background-color: skyblue; color: black}
+nav ul li a:hover { color: antiquewhite; }
 
 main {}
 div.highlow {text-align: left}

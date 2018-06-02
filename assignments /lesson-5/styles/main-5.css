@@ -1,7 +1,7 @@
 /* Delete these CSS comments after reading. */
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     background-color: white;
@@ -10,15 +10,18 @@ body {
 
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 800px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+header, nav, main, footer { margin: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  max-width: 1200px/* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 #siteTitle { 
-    font-size: 60px;
-    font-family: "serif"; 
+    font-size: 60px; 
     color:skyblue;
-    text-align: center
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
 }
 
 #subTitle { font-size: 20px;

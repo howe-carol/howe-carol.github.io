@@ -134,4 +134,4 @@ footer {padding: 50px; text-align: center; overflow: visible; background-color: 
 
 main, picture, img {  width:100%;  height: auto;}
 
-.weather-summary img {float: left; width: 100px; height: auto; position: inherit;}
+.weather-summary img {float: left; width: 100px; height: auto; }

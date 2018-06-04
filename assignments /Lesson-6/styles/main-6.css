@@ -118,7 +118,7 @@ table, td{border: 1px solid black; background: gray; text-align: center; border-
     width: 100%; 
     overflow: hidden; 
     text-align: center;
-    position: center;
+    position:relative;
     border-collapse: collapse;
     
 }
@@ -134,4 +134,4 @@ footer {padding: 50px; text-align: center; overflow: visible; background-color: 
 
 main, picture, img {  width:100%;  height: auto;}
 
-.weather-summary img {float: left; width: 100px; height: auto; position: center;}
+.weather-summary img {float: left; width: 100px; height: auto; position: inherit;}

@@ -1,0 +1,56 @@
+ @media screen and (max-width:2000px){
+     
+        div.spring{ 
+        display: none;
+        }
+        div.ocean {
+            display: none;
+        }
+        div.beach {
+            display: none;
+        }
+      }
+        @media screen and (max-width:1000px){
+            div.spring{
+                display: flex;
+                flex-direction: row;
+            }
+            div.ocean{
+                display: flex;
+                flex-direction: row;
+            }
+            div.rain{
+                display: none;
+            }
+            div.desert{
+                display: none;
+            }
+            div.snow{
+                display: none;
+            }
+       }
+        @media screen and (max-width:600px){
+            div.ocean{
+                display: none;
+            }
+            div.rain{
+                display: none;
+            }
+            div.desert{
+                display: none;
+            }
+            div.snow{
+                display: none;
+            }
+            div.spring{ 
+                display: none;
+            }
+            div.beach {
+                display: flex;
+        }
+    }
+    
+.grid-container{
+    display: flex;
+    flex-direction: row;
+}

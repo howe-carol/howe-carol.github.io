@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <title>Franklin Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Frankin page">
+  <link rel="stylesheet" href="styles/normalize.css">  
+  <link rel="stylesheet" href="styles/main-7.css">  
+  <link rel="stylesheet" href="styles/medium-7.css">  
+  <link rel="stylesheet" href="styles/large-7.css"> 
+    
+  <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <script src="scripts/hamburger.js"></script>
+    
+</head>
+
+<body>
+    
+<header>
+    <img src="images/earth.jpeg" alt="sun">
+    <div class="siteTitle">Your Accurate Weather</div> 
+    <div class="subTitle">"There is no such thing as bad weather, only different    kinds of good weather!"  </div>
+</header>
+        
+
+ 
+<nav>
+    <div class="topnav" id="myTopnav">  
+    
+<a href="#" >Home |</a>
+<a href="#" class="active" >Franklin |</a>
+<a href="#">Greenville |</a>
+<a href="#">Springfield |</a>
+<a href="#">Storm Center |</a>
+<a href="#">Gallery</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+    <i class="fa fa-bars"></i>
+        </a>	
+    </div>
+</nav>
+
+<main>
+
+<h2>FRANKLIN </h2>
+  
+   <picture>
+       <source media="(min-width:800px)" srcset="images/franklin-large.jpeg">
+       <source media="(min-width:600px)" srcset="images/franklin-medium.jpeg">
+        <source media="(min-width:300px)" srcset="images/franklin-small.jpeg">
+       <img src="images/franklin-small.jpeg" alt="field and sunset">
+   </picture>
+    
+
+    
+<section class="weather-summary">
+    
+<h3>Weather Summary</h3> 
+    <picture>
+    <img src="images/cartoon-sun-vector.jpg" alt="sun" >
+    </picture>
+    
+<div class="current">
+    
+<div class="highlow">
+    <p>High:<span> 90&deg;F</span></p>  
+    <p>Low: <span>66&deg;F</span></p>  
+</div>
+    <br>
+<div class="conditions">
+    
+    <p>Precipitation: <span>0%</span> </p>  
+    <p>Wind Speed: <span>5mpg SW</span> </p>  
+      </div>  
+    
+ </div>
+</section>
+
+     <br> 
+    
+<section class="forecast">
+    <h4> Ten Day Forecast </h4>
+      <table >
+          <thead>
+          <tr>
+              <td>Day 1</td>
+              <td>Day 2</td>
+              <td>Day 3</td>
+              <td>Day 4</td>
+              <td>Day 5</td>
+              <td>Day 6</td>
+              <td>Day 7</td>
+              <td>Day 8</td>
+              <td>Day 9</td>
+              <td>Day 10</td>
+          </tr>
+          </thead>
+          <tbody>
+                
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+        </tbody>  
+      </table>
+</section>
+      
+<article>
+    
+      <h3>Franklin Breaks Record</h3>	
+      <img src="images/pexels-photo-724507.jpeg" width="300" alt="Super orange sun">
+      <p class="town-article"> 
+    <p>We welcome you to the website for Franklin County Missouri.  Franklin County is located in  eastern Missouri near St. Louis. The county is the fourth largest county in Missouri with an area of 923 square miles.  The county seat is Union.</p> 
+        
+</article>	  
+  
+        </main>
+    
+  <footer>
+      <div class="contact">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    </div>
+    <div class="footer-bar">&copy; 2018 | All Rights Reserved | Your Accurate Weather  | <span id="currentdate">June, 1 2018</span>
+    </div>
+  </footer>
+<script src="scripts/currentdate.js" ></script>
+</body>
+</html>

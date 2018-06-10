@@ -102,7 +102,7 @@ header, nav, main, footer { margin: auto;
     text-align: left;
   }
 }
-/*---------------------------------*/
+
 
 
 div.highlow {
@@ -191,3 +191,19 @@ main, picture, img {  width:100%;  height: auto;}
 
 .weather-summary img {display: flex;
     justify-content: right; width: 100px; height: auto; }
+
+/* GALLERY */
+
+    
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    
+}
+
+

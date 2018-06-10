@@ -20,8 +20,8 @@ header, nav, main, footer { margin: auto;
 
  header img {
     display: flex;
-    justify-content: flex-start;
-    align-self: flex-start;
+    align-content: flex-start;
+
     width: 250px; 
     height: 175px;
 }
@@ -180,8 +180,9 @@ article img {
 }
 
 footer {
+    display: flex;
+    align-content: center;
     padding: 50px; 
-    text-align: center;
     overflow: visible; 
     background-color: skyblue
 }

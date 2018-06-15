@@ -6,31 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Table build">
   <link rel="stylesheet" href="styles/normalize.css"> 
+  <link rel="stylesheet" href="styles/tablestyle.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <style>
-        main {font-family: Ubuntu, sans-serif}
-table, th, td {
-   border: 1px solid black;
-    padding: 0;
-    
-}
-th, td {
-   
-}
-</style>
+
 </head>
 
 <body>
 <main>
-    
+    <div style="overflow-x:auto;">
 <table>
     <thead>
+        <th> ACME Wildwest</th>
 <tr>
     <th>Period</th>    
     <th>Sales</th>
     <th>Sales Goal</th>    
 </tr>
     </thead>
+<tfoot>
+    <tr>
+       <td> Compiled 12.20.2020 by Carol Howe </td> 
+    </tr>
+</tfoot>
 <tbody> 
     <tr>
 <td> August </td>
@@ -62,14 +59,10 @@ th, td {
 <td> $ 7,500 </td>
     </tr>  
 </tbody>
-    <tfoot>
-        <tr>
-        Compiled 12.20.2020 by bRauls
-        </tr>
-    </tfoot>
+    
     
 </table>    
-    
+    </div>
 </main>    
     
 </body>

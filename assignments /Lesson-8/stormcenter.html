@@ -44,3 +44,105 @@
         </a>	
     </div>
 </nav>
+    
+<main class="stormcenter">
+    <h1> Storm Center </h1>
+
+<form id="stormcenter" method="get" action="thanks.html">
+    <fieldset>   
+    <legend>
+        <div>PERSONAL INFORMATION</div>    
+    </legend>
+<label class="personalI">
+
+    <div> FULL NAME: </div>
+        
+
+
+<input type="text" name="FullName" placeholder="Full Name " autofocus pattern="[a-zA-Z -._]{5,99}" required>
+
+</label> 
+<label class="personalInfo">
+          <div>Email:</div>
+          <input type="email" name="email" placeholder="youremail@email.com" required>
+        </label>
+        <label class="personalInfo">
+          <div>Phone:</div>
+          <input type="tel" name="phonenumber" value="" placeholder="5552221111" pattern="[0-9]{10,20}" required>
+        </label> 
+        <label class="personalInfo">
+          <div>Zip Code:</div>
+          <input type="number" name="zipcode" value="" placeholder="84321" required>
+        </label>
+      <fieldset>
+        <div class="personalbottom">
+        <legend>
+		<div>Storm Information</div>
+		</legend>
+        <label>
+          <div>Storm Date:</div> 
+          <input type="date" name="date">
+        </label>
+        <label>
+          <div>Storm Type:</div>
+          <input list="stormtypes" name="stormtype">
+          <datalist id="stormtypes">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+        </label>
+		<label>
+		  <div>Storm Severity:</div>
+          <div>
+          <input type="range" name="stormseverity" value="5" min="1" max="10" step="1"oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+          <div id="stormseverity">5</div>
+          </div>
+		</label>       
+        <label>
+          <div>Storm Region:</div>
+		  <select name="stormregion">
+            <option disabled selected>Select Region ...</option>
+            <option value="Franklin">Franklin</option>
+            <option value="Greenville">Greenville</option>
+            <option value="Springfiled">Springfield</option>
+          </select>
+        </label>
+        <label>
+          <div>User In-Danger Level:</div>
+		  <div>
+          <input type="radio" name="danger_level" value="yes" > Yes<br>
+          <input type="radio" name="danger_level" value="maybe" > Maybe<br>
+		  <input  type="radio" name="danger_level" value="no" > No <br>
+          </div>
+        </label>
+        <label>
+          <div>Comments:</div>
+		  <textarea  name="comments" cols="40" rows="6" placeholder="Additional information or comments.">
+		  </textarea>
+        </label>
+      </div>
+      </fieldset>
+      <input type="submit" class="submitBtn" value="Send Storm Information">
+ <footer>
+      <div class="contact">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    </div>
+    <div class="footer-bar">&copy; 2018 | All Rights Reserved | Your Accurate Weather  | <span id="currentdate">June, 1 2018</span>
+    </div>
+  </footer>
+        
+<script src="scripts/hamburger.js" ></script>
+<script src="scripts/windchill.js" ></script>
+<script src="scripts/currentdate.js" ></script>
+<script src="scripts/stormcenter.js" ></script>
+    </fieldset>
+    </form>
+    </main>
+    </body>
+</html>

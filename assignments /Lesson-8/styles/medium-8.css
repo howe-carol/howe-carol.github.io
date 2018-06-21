@@ -1,10 +1,27 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 760px) {
 
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+ 
+  .siteTitle {
+    font-size: 25px;
+  
+  }
     
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
-    
-    section.forecast {display:block; width: 100% }  /* show the 10-day forecast with the medium view and up */
+  .subtitle {
+    font-size: 20px;
+  }  
 
+  .topnav {
+    font-size: 25px;
+  }
     
+  figure img {
+        max-height: 20vw;
+    }
+ 
+    
+    .grid-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
   }

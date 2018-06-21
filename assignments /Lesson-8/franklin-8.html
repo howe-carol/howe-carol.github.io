@@ -13,25 +13,34 @@
   <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Nanum+Gothic+Coding" rel="stylesheet">
+    
   <script src="scripts/hamburger.js"></script>
-  <script src="scripts/windchill.js"></script>
-  <script src="scripts/currentdate.js"></script>
+    
 </head>
 
 <body>
     
 <header>
     <picture>
-        <img src="images/earth.jpeg" alt="sun">
+      <img src="images/earth.jpg"  alt="sun">
     </picture>
-    <div class="siteTitle">Your Accurate Weather</div> 
-    <div class="subTitle">"There is no such thing as bad weather, only different    kinds of good weather!"  </div>
+    
+<section class="headings">
+   
+    <h2 class="siteTitle"> Your Accurate Weather </h2>
+    <h1 class="subTitle">"There is no such thing as bad weather, only different    kinds of good weather!"  </h1>
+    
+</section>
 </header>
         
 
  
 <nav>
-    <div class="topnav" id="myTopnav">  
+<div class="topnav" id="myTopnav">  
+    
+
     
 <a href="#" >Home |</a>
 <a href="#" class="active" >Franklin |</a>
@@ -39,15 +48,15 @@
 <a href="#">Springfield |</a>
 <a href="stormcenter.html">Storm Center |</a>
 <a href="gallery-7.html">Gallery</a>
+
 <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
-    <i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i>
+
         </a>	
-    </div>
+</div>
 </nav>
 
 <main>
-
-<h2>FRANKLIN </h2>
   
    <picture>
        <source media="(min-width:800px)" srcset="images/franklin-large.jpeg">
@@ -60,30 +69,30 @@
     
 <section class="weather-summary">
     
+<div> <h2 id="City"> FRANKLIN </h2> </div>
+    
+<div > 
+<img class="currentWeather" src="images/cartoon-sun-vector.jpg" alt="sun" >
+     
 <h3>Weather Summary</h3> 
-    <picture>
-    <img id="suncartoon" src="images/cartoon-sun-vector.jpg" alt="sun">
-    </picture>
-    
-<div class="current">
-    
+        
 <div class="highlow">
     <p>High:<span> 90&deg;F</span></p> 
     <br>
     <p>Low: <span>66&deg;F</span></p>  
 </div>
-    <br>
+<br>
 <div class="conditions">
+    <p>Precipitation: 0% </p>
+    <br>
+    <p>Wind Speed: 5mpg SW </p>  
+</div>
     
-    <p>Precipitation: <span>0%</span> </p>  
-    <p>Wind Speed: <span>5mpg SW</span> </p>  
-    <div class= "windchill"> </div>
-      </div>  
-    
- </div>
+<div class= "windchill" id="windChill"> </div>
+</div>
 </section>
 
-     <br> 
+<br> 
     
 <section class="forecast">
     <h4> Ten Day Forecast </h4>
@@ -121,7 +130,6 @@
 </section>
       
 <article>
-    
       <h3>Franklin Breaks Record</h3>	
       <img src="images/pexels-photo-724507.jpeg" width="300" alt="Super orange sun">
       <p class="town-article"> 
@@ -129,7 +137,7 @@
         
 </article>	  
   
-        </main>
+</main>
     
   <footer>
       <div class="contact">
@@ -143,5 +151,6 @@
   </footer>
 <script src="scripts/currentdate.js" ></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/hamburger.js" ></script>
 </body>
 </html>

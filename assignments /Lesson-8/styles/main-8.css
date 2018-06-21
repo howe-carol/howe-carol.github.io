@@ -4,41 +4,65 @@
 * { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-    background-color: white;
+  background-color: white;
   font-size: 16px;
   font-family: 'Josefin Sans', sans-serif;/* Declare the base font-family */
 
 }
+/* HEADER*/
 
-header, nav, main, footer { margin: auto;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  max-width: 1200px;/* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+header, nav, .topnav, footer { 
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+    
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-
- header img {
-    display: flex;
-    align-content: flex-start;
-
-    width: 250px; 
-    height: 175px;
+picture {
+    flex: 0 1 128px;
+    text-align: center;
 }
-.siteTitle { 
+
+
+header picture img  {
+    
+    width: 100px;
+    height: 100px;
+    
+    
+
+}
+
+header, section, headings, siteTitle,  { 
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    
+ 
+}
+.siteTitle {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
     font-size: 60px; 
     color:skyblue;
     font-family: 'Dokdo', cursive;
 }
-
 .subTitle { 
     display: flex;
-    justify-content: center;
-    font-size: 20px;
+    align-content: center;
+    align-items: center;
+    font-size: 25px;
     font-family: 'Indie Flower', cursive; 
 }
+
 
 
 
@@ -47,11 +71,12 @@ header, nav, main, footer { margin: auto;
 
 .topnav {
   display: flex;
+  flex-flow: row nowrap;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
+  justify-content: center;
+  align-items: baseline;
   overflow: hidden;
-  background-color: #6ddff4;
+  background-color: lightblue;
 }
 
 .topnav a {
@@ -59,33 +84,38 @@ header, nav, main, footer { margin: auto;
   flex-direction: row;
   color: black;
   text-align: center;
-  padding: 1px 1px;
-  text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
+  padding: 5px 5px;
+  font-family: 'Shadows Into Light', cursive;
 }
 
-.topnav a:hover {
-  background-color: antiquewhite;
-  color: black;
-}
 
 .topnav .active {
-  background-color: darkblue;
+  background-color: deepskyblue;
   color: whitesmoke;
 }
 .active {
   background-color: darkblue;
   color: whitesmoke
 }
-.topnav .icon {
-  display: none;
+
+
+.topnav a:hover {
+  background-color: cadetblue;
+  color: black;
 }
 
-@media screen and (max-width: 400px) {
+ .topnav.responsive a {
+    display: flex;
+     
+  }
+
+@media screen and (max-width: 200px) {
+  .topnav {flex-flow: column; justify-content: flex-start;}
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
-    display: block;
+    display: flex;
+      
   }
 }
 
@@ -95,57 +125,88 @@ header, nav, main, footer { margin: auto;
     position: absolute;
     right: 0;
     top: 0;
+      
+    }
+    
+@media screen and (max-width: 200px) {
+  .topnav.responsive {flex-flow: column;}
+  .topnav.responsive .icon {
+    flex-flow: column;
+    justify-content: flex-start;
+    }
   }
-  .topnav.responsive a {
-    display: flex;
-    text-align: left;
-  }
+ 
 }
 
-/*BAR*/
-
-main h2 {
-    display: flex;
-    justify-content: center;
-     }
-main .thanks{ color: darkblue;
+main .thanks {
     display: flex;
     align-content: center;
-    justify-content: center;
-    font-size: 25px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
     
+    
+    
+}
+
+/* WEATHER SUMMARY*/
+
+.weather-summary {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
     
 }
 
 div.highlow {
     display: flex;
     justify-content: center;
+    font-size: 40px;
     }
 div.highlow span {
     display: flex;
     justify-content: center;
-    font-weight: bold;
 }
 div.conditions {
     display: flex;
     justify-content: center;
-    text-align: left
+    text-align: left;
+    font-size: 40px;
 }
 div.conditions span {
     display: flex;
     justify-content: center;
-    font-weight: bold;
+   
 }
+
+
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    text-align: center;
+     }
+
 
 main .weather-summary h3 {
     display: flex;
     justify-content: center;
+    font-size: 60px
    }
 
 
 
+main figure img {
+    display: flex;
+    justify-content: center;
+}
+
+
 table, td{border: 1px solid black; 
-    background: gray; 
+    background-color: lightgray;
     text-align: center;
     border-collapse: collapse; }
 
@@ -165,7 +226,8 @@ table, td{border: 1px solid black;
 article h3 {
     text-align: center; 
     background-color:lightblue; 
-    padding: 20px
+    padding: 20px;
+    font-family: 'Nanum Gothic Coding', monospace;
 }
 article { padding: 1px;
           text-align: center; 
@@ -173,13 +235,12 @@ article { padding: 1px;
           border-color: gainsboro; 
           padding: 1px;
           padding: 25px;
+          font-family: 'Nanum Gothic Coding', monospace;;
 }
 
 article img {
     display: flex;
-    justify-content: center; 
-    position: static; 
-    overflow:auto;  
+    justify-content: center;  
     width: 200px; 
     height: 100px; 
 }
@@ -212,57 +273,3 @@ main, picture, img {  width:100%;  height: auto;}
 }
 
 
-/* STORM CENTER */
-
-form {
-    background-color: bisque;
-    width: 20rem;
-    border: 0.5px solid black;
-    padding: 1;
-    
-}
-
-form fieldset {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    
-}
-
-form form .personaltop {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column;
-}
-form .personaltop legend {
-    font-size:2em;
-    margin-bottom: 10px;
-    border-bottom: 1px solid black;
-}
-form .personalInfo input:required ~ label:after,
-textarea:required ~ label:after {
-    content: " *";
-    color: #cc3f85;
-}
-form .personaltop label {
-margin: 5px 0px 5px 0px;
-}
-form .personalbottom {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column;
-}
-form .personalbottom legend {
-    font-size:2em;
-    margin-bottom: 10px;
-    border-bottom: 1px solid black;
-}
-form .personalbottom label {
-margin: 5px 0px 5px 0px;
-}
-form .submitBtn {
-    background-color: cadetblue;
-    padding: 10px;
-    margin: 5px 10px;
-    border-radius: 20px;
-}

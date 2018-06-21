@@ -1,4 +1,49 @@
-@media only screen and (min-width: 64em ) {
+ @media only screen and (min-width: 761px) {
+    
+  .siteTitle {
+    font-size: 60px;
+    
+  }
+    
+  .subtitle {
+    font-size: 40px;
+  }   
     
   
+  .topnav a {
+    font-size: 30px;
+  }
+
+    figure img {
+        max-height: 20vw;
+    }
+      
+  .currentweather {
+    width: 100%;
+  }
+
+  .forecast {
+      display: contents;
+    }
+  
+    .article-image {
+        order: 2;
+    } 
+    
+    footer {
+        margin-top: 5em;
+        font-size: 1em;
+        
+    }
+    
+    .grid-gallery {
+       grid-template-columns: 1fr 1fr 1fr;
+     
+    }
+     .grid-gallery img:hover {
+        box-shadow: 5px 5px 15px gray;
+    }
+   
+    
+}
   }

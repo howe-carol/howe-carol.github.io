@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Nanum+Gothic+Coding" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     
     
 </head>
@@ -62,25 +62,26 @@
 <form id="stormcenter" method="get" action="thanks.html">
     <fieldset>   
     <legend>
-        <div>PERSONAL INFORMATION</div>    
+        <span>PERSONAL INFORMATION</span>    
     </legend>
 <label class="personalI">
 
-    <div> FULL NAME: </div>
+    <span> FULL NAME: </span>
+    
 <input type="text" name="FullName" placeholder="Full Name " autofocus pattern="[a-zA-Z -._]{5,99}" required>
 
 </label> 
         
 <label class="personalInfo">
-          <div>EMAIL:</div>
+          <span>EMAIL:</span>
           <input type="email" name="email" placeholder="youremail@email.com" required>
         </label>
         <label class="personalInfo">
-          <div>PHONE NUMBER:</div>
+          <span>PHONE NUMBER:</span>
           <input type="tel" name="phonenumber" value="" placeholder="1234567890" pattern="[0-9]{10,20}" required>
         </label> 
         <label class="personalInfo">
-          <div>ZIP CODE::</div>
+          <span>ZIP CODE::</span>
           <input type="number" name="zipcode" value="" placeholder="80000" required>
         </label>
  <fieldset>
@@ -90,8 +91,8 @@
 		<div>Storm Information</div>
 		</legend>
 <label>
-          <div>Storm Date:</div> 
-          <input type="date" name="date">
+    <span>Storm Date:</span> <br>
+    <input type="date" name="date">     
 </label>
         
 <label>
